@@ -2,7 +2,7 @@ from django.db import models
 import datetime
 
 class Resource(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, verbose_name=b'Name of the resource?')
     cover = models.ImageField(upload_to=None, max_length=100, blank=True, null=True)
 
 class Assignment(models.Model):
