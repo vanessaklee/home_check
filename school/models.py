@@ -5,6 +5,9 @@ class Resource(models.Model):
     title = models.CharField(max_length=255, verbose_name=b'Name of the resource?')
     cover = models.ImageField(upload_to=None, max_length=100, blank=True, null=True)
 
+    def __str__(self):
+      return self.title
+
 class Assignment(models.Model):
     title = models.CharField(max_length=200)
     instructions = models.TextField(max_length=1000, blank=True)
