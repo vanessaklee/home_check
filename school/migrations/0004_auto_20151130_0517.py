@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='assignment',
             name='time_spent',
-            field=models.TimeField(default=0),
+            field=models.TimeField(),
         ),
     ]
